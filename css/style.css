@@ -1,0 +1,134 @@
+body {
+	margin:0;
+	padding:0;
+	border:0;
+	width:100%;
+	background:#fff;
+	min-width:600px;
+	font-size:90%;
+}
+#header ul {
+	clear:left;
+	float:left;
+	width:100%;
+	list-style:none;
+	margin:10px 0 0 0;
+	padding:0;
+}
+#header ul li {
+	display:inline;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#header ul li a {
+	display:block;
+	float:left;
+	margin:0 0 0 1px;
+	padding:3px 10px;
+	text-align:center;
+	background:#eee;
+	color:#000;
+	text-decoration:none;
+	position:relative;
+	left:15px;
+	line-height:1.3em;
+}
+#header ul li a:hover {
+	background:#369;
+	color:#fff;
+}
+#header ul li a.active,
+#header ul li a.active:hover {
+	color:#fff;
+	background:#000;
+	font-weight:bold;
+}
+#header ul li a span {
+	display:block;
+}
+.fill {
+	width: 100%;
+}
+.army{
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #999;
+	background-color: #CCC;
+}
+.army.perfect{
+	border: 1px solid #992;
+	background-color: #CC5;
+}
+.army.defeat{
+	border: 1px solid #000;
+	background-color: #777;
+}
+.result {
+	border: 1px dashed #999;
+}
+.result.won{
+	color: #0f0;
+	background-color: #060;
+}
+.result.lost{
+	color: #f00;
+	background-color: #600;
+}
+.colmask {
+	position:relative;
+	clear:both;
+	float:left;
+	width:100%;
+	overflow:hidden;
+	border-top:1px solid #000;
+}
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+	overflow:hidden;
+}
+.threecol {
+	background:#eee;
+	}
+.threecol .colmid {
+	right:25%;
+	background:#fff;
+}
+.threecol .colleft {
+	right:50%;
+	background:#f4f4f4;
+}
+.threecol .col1 {
+	width:46%;
+	left:102%;
+}
+.threecol .col2 {
+	width:21%;
+	left:31%;
+}
+.threecol .col3 {
+	width:21%;
+	left:85%;
+}
+
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:1px solid #000;
+}
+#footer p {
+	padding:10px;
+	margin:0;
+}

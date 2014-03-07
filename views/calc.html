@@ -1,0 +1,47 @@
+<div ng-controller="WarriorController">
+  <div class="colmask threecol">
+	<div class="colmid">
+	  <div class="colleft">
+		<div class="col1">
+			<h2><button class="fill" ng-click="toBattle()">TO BATTLE!</button></h2>
+			<p ng-attr-class="result {{won(0)}}">Round 1</p>
+			<p ng-attr-class="result {{won(1)}}">Round 2</p>
+			<p ng-attr-class="result {{won(2)}}">Round 3</p>
+		</div>
+		<div class="col2">
+			<h2>Player</h2>
+			<div ng-attr-class="army {{perfect(0)}}">
+				<player-selector model="fields.player[0].type"></player-selector>
+				<input type="number" ng-model="fields.player[0].count" min="0" value="0" />
+			</div>
+			<div ng-attr-class="army {{perfect(1)}}">
+				<player-selector model="fields.player[1].type"></player-selector>
+				<input type="number" ng-model="fields.player[1].count" min="0" value="0" />
+			</div>
+			<div ng-attr-class="army {{perfect(2)}}">
+				<player-selector model="fields.player[2].type"></player-selector>
+				<input type="number" ng-model="fields.player[2].count" min="0" value="0" />
+			</div>
+			<p>Total: {{getTotal(fields.player)}}</p>
+		</div>
+		<div class="col3">
+			<h2>Enemy</h2>
+			<div class="army">
+				<input type="number" ng-model="fields.enemy[0].count" min="0" value="0" />
+				<enemy-selector model="fields.enemy[0].type"></enemy-selector>
+			</div>
+			<div class="army">
+				<input type="number" ng-model="fields.enemy[1].count" min="0" value="0" />
+				<enemy-selector model="fields.enemy[1].type"></enemy-selector>
+			</div>
+			<div class="army">
+				<input type="number" ng-model="fields.enemy[2].count" min="0" value="0" />
+				<enemy-selector model="fields.enemy[2].type"></enemy-selector>
+			</div>
+			<p><input type="checkbox" ng-model="fields.berserker" />Berserkers</p>
+			<p>Total: {{getTotal(fields.enemy)}}</p>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
